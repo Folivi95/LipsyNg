@@ -1,8 +1,8 @@
 ﻿namespace LipsyNg.Data.Models
 {
-    public class Drink
+    public class Lipsticks
     {
-        public int DrinkId { get; set; }
+        public int LipstickId { get; set; }
         public string Name { get; set; }
         public string ShortDescription { get; set; }
         public string LongDescription { get; set; }

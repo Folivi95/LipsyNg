@@ -7,6 +7,6 @@ namespace LipsyNg.Data.Models
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string Description { get; set; }
-        public List<Drink> Drinks { get; set; }
+        public List<Lipsticks> Drinks { get; set; }
     }
 }

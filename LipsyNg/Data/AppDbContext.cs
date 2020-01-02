@@ -14,7 +14,7 @@ namespace LipsyNg.Data
 
         }
 
-        public DbSet<Drink> Drinks { get; set; }
+        public DbSet<Lipsticks> Lipsticks { get; set; }
         public DbSet<Category> Categories { get; set; }
     }
 }

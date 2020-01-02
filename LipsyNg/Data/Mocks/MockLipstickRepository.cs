@@ -6,14 +6,14 @@ using System.Linq;
 
 namespace LipsyNg.Data.Mocks
 {
-    public class MockDrinkRepository : IDrinkRepository
+    public class MockLipstickRepository : ILipstickRepository
     {
         private readonly ICategoryRepository categoryRepository = new MockCategoryRepository();
-        public IEnumerable<Drink> Drinks
+        public IEnumerable<Lipsticks> Lipsticks
         {
-            get => new List<Drink>
+            get => new List<Lipsticks>
             {
-                new Drink {
+                new Lipsticks {
                         Name = "Beer",
                         Price = 7.95M, ShortDescription = "The most widely consumed alcohol",
                         LongDescription = "Beer is the world's oldest[1][2][3] and most widely consumed[4] alcoholic drink; it is the third most popular drink overall, after water and tea.[5] The production of beer is called brewing, which involves the fermentation of starches, mainly derived from cereal grains—most commonly malted barley, although wheat, maize (corn), and rice are widely used.[6] Most beer is flavoured with hops, which add bitterness and act as a natural preservative, though other flavourings such as herbs or fruit may occasionally be included. The fermentation process causes a natural carbonation effect, although this is often removed during processing, and replaced with forced carbonation.[7] Some of humanity's earliest known writings refer to the production and distribution of beer: the Code of Hammurabi included laws regulating beer and beer parlours.",
@@ -23,7 +23,7 @@ namespace LipsyNg.Data.Mocks
                         IsPreferredDrink = true,
                         ImageThumbnailUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg"
                     },
-                    new Drink {
+                    new Lipsticks {
                         Name = "Rum & Coke",
                         Price = 12.95M, ShortDescription = "Cocktail made of cola, lime and rum.",
                         LongDescription = "The world's second most popular drink was born in a collision between the United States and Spain. It happened during the Spanish-American War at the turn of the century when Teddy Roosevelt, the Rough Riders, and Americans in large numbers arrived in Cuba. One afternoon, a group of off-duty soldiers from the U.S. Signal Corps were gathered in a bar in Old Havana. Fausto Rodriguez, a young messenger, later recalled that Captain Russell came in and ordered Bacardi (Gold) rum and Coca-Cola on ice with a wedge of lime. The captain drank the concoction with such pleasure that it sparked the interest of the soldiers around him. They had the bartender prepare a round of the captain's drink for them. The Bacardi rum and Coke was an instant hit. As it does to this day, the drink united the crowd in a spirit of fun and good fellowship. When they ordered another round, one soldier suggested that they toast ¡Por Cuba Libre! in celebration of the newly freed Cuba.",
@@ -33,7 +33,7 @@ namespace LipsyNg.Data.Mocks
                         IsPreferredDrink = false,
                         ImageThumbnailUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg"
                     },
-                    new Drink {
+                    new Lipsticks {
                         Name = "Tequila ",
                         Price = 12.95M, ShortDescription = "Beverage made from the blue agave plant.",
                         LongDescription = "Tequila (Spanish About this sound [teˈkila] (help·info)) is a regionally specific name for a distilled beverage made from the blue agave plant, primarily in the area surrounding the city of Tequila, 65 km (40 mi) northwest of Guadalajara, and in the highlands (Los Altos) of the central western Mexican state of Jalisco. Although tequila is similar to mezcal, modern tequila differs somewhat in the method of its production, in the use of only blue agave plants, as well as in its regional specificity. Tequila is commonly served neat in Mexico and as a shot with salt and lime across the rest of the world.The red volcanic soil in the surrounding region is particularly well suited to the growing of the blue agave, and more than 300 million of the plants are harvested there each year.[1] Agave tequila grows differently depending on the region. Blue agaves grown in the highlands Los Altos region are larger in size and sweeter in aroma and taste. Agaves harvested in the lowlands, on the other hand, have a more herbaceous fragrance and flavor.",
@@ -43,7 +43,7 @@ namespace LipsyNg.Data.Mocks
                         IsPreferredDrink = false,
                         ImageThumbnailUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg"
                     },
-                    new Drink
+                    new Lipsticks
                     {
                         Name = "Juice ",
                         Price = 12.95M,
@@ -58,9 +58,9 @@ namespace LipsyNg.Data.Mocks
             };
             set => throw new NotImplementedException();
         }
-        public IEnumerable<Drink> PreferredDrinks { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public IEnumerable<Lipsticks> PreferredLipsticks { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public Drink GetDrinkById(int drinkId)
+        public Lipsticks GetLipstickById(int LipstickId)
         {
             throw new NotImplementedException();
         }

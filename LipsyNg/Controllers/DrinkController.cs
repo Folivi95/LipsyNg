@@ -7,9 +7,9 @@ namespace LipsyNg.Controllers
     public class DrinkController : Controller
     {
         private readonly ICategoryRepository categoryRepository;
-        private readonly IDrinkRepository drinkRepository;
+        private readonly ILipstickRepository drinkRepository;
 
-        public DrinkController(ICategoryRepository category, IDrinkRepository drink)
+        public DrinkController(ICategoryRepository category, ILipstickRepository drink)
         {
             categoryRepository = category;
             drinkRepository = drink;

@@ -6,16 +6,16 @@
 <h2>@Model.CurrentCategory</h2>
 
 @{ 
-    foreach (var drink in Model.Drinks)
+    foreach (var lipstick in Model.Lipsticks)
     {
         <div class="col-sm-4 col-lg-4 col-md-4">
             <div class="img-thumbnail">
-                <img src="@drink.ImageThumbnailUrl" alt="@drink.ImageThumbnailUrl" width="400" height="400"/>
+                <img src="@lipstick.ImageThumbnailUrl" alt="@lipstick.ImageThumbnailUrl" width="400" height="400"/>
             </div>
             <div class="figure-caption">
-                <h3 class="float-right">@drink.Price.ToString("c")</h3>
-                <h3><a>Drink Name: @drink.Name</a></h3>
-                <p>@drink.ShortDescription</p>
+                <h3 class="float-right">@lipstick.Price.ToString("c")</h3>
+                <h3><a>Drink Name: @lipstick.Name</a></h3>
+                <p>@lipstick.ShortDescription</p>
             </div>
         </div>
     }

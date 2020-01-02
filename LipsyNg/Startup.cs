@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using LipsyNg.Data;
 using LipsyNg.Data.Interfaces;
 using LipsyNg.Data.Mocks;
+using LipsyNg.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -30,8 +31,8 @@ namespace LipsyNg
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configurationRoot.GetConnectionString("DefaultConnection")));
-            services.AddTransient<IDrinkRepository, MockDrinkRepository>();
-            services.AddTransient<ICategoryRepository, MockCategoryRepository>();
+            services.AddTransient<ILipstickRepository, LipstickRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddMvc();
         }
 
