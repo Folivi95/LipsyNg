@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LipsyNg.ViewModels
 {
-    public class DrinkListViewModel
+    public class LipstickListViewModel
     {
-        public IEnumerable<Lipsticks> Drinks { get; set; }
+        public IEnumerable<Lipsticks> Lipsticks { get; set; }
         public string CurrentCategory { get; set; }
     }
 }

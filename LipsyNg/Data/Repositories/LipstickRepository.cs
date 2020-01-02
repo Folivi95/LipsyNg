@@ -16,7 +16,7 @@ namespace LipsyNg.Data.Repositories
             this.appDbContext = appDbContext;
         }
         public IEnumerable<Lipsticks> Lipsticks => appDbContext.Lipsticks.Include(c => c.Category);
-        public IEnumerable<Lipsticks> PreferredLipsticks { get => appDbContext.Lipsticks.Where(p => p.IsPreferredDrink).Include(c => c.Category);  }
+        public IEnumerable<Lipsticks> PreferredLipsticks { get => appDbContext.Lipsticks.Where(p => p.IsPreferredLipstick).Include(c => c.Category);  }
 
         public Lipsticks GetLipstickById(int LipstickId)
         {

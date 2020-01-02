@@ -20,7 +20,7 @@ namespace LipsyNg.Data.Mocks
                         Category = categoryRepository.Categories.First(),
                         ImageUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg",
                         InStock = true,
-                        IsPreferredDrink = true,
+                        IsPreferredLipstick = true,
                         ImageThumbnailUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg"
                     },
                     new Lipsticks {
@@ -30,7 +30,7 @@ namespace LipsyNg.Data.Mocks
                         Category =  categoryRepository.Categories.First(),
                         ImageUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg",
                         InStock = true,
-                        IsPreferredDrink = false,
+                        IsPreferredLipstick = false,
                         ImageThumbnailUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg"
                     },
                     new Lipsticks {
@@ -40,7 +40,7 @@ namespace LipsyNg.Data.Mocks
                         Category =  categoryRepository.Categories.First(),
                         ImageUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg",
                         InStock = true,
-                        IsPreferredDrink = false,
+                        IsPreferredLipstick = false,
                         ImageThumbnailUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg"
                     },
                     new Lipsticks
@@ -52,7 +52,7 @@ namespace LipsyNg.Data.Mocks
                         Category = categoryRepository.Categories.Last(),
                         ImageUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg",
                         InStock = true,
-                        IsPreferredDrink = false,
+                        IsPreferredLipstick = false,
                         ImageThumbnailUrl = "https://i.ibb.co/bWmqGg6/0ab6c3884957903de14194acc309d73a9c404957.jpg"
                     }
             };

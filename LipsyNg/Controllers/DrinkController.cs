@@ -7,18 +7,18 @@ namespace LipsyNg.Controllers
     public class DrinkController : Controller
     {
         private readonly ICategoryRepository categoryRepository;
-        private readonly ILipstickRepository drinkRepository;
+        private readonly ILipstickRepository lipstickRepository;
 
-        public DrinkController(ICategoryRepository category, ILipstickRepository drink)
+        public DrinkController(ICategoryRepository category, ILipstickRepository lipstick)
         {
             categoryRepository = category;
-            drinkRepository = drink;
+            lipstickRepository = lipstick;
         }
 
         public ViewResult List()
         {
-            DrinkListViewModel vm = new DrinkListViewModel();
-            vm.Drinks = drinkRepository.Drinks;
+            LipstickListViewModel vm = new LipstickListViewModel();
+            vm.Lipsticks = lipstickRepository.Lipsticks;
             vm.CurrentCategory = "Drink Category";
             return View(vm);
         }
