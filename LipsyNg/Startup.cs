@@ -43,6 +43,8 @@ namespace LipsyNg
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+
+            DbInitializer.Seed(app);
             //if (env.IsDevelopment())
             //{
             //    app.UseDeveloperExceptionPage();
